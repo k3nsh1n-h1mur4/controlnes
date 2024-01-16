@@ -1,0 +1,38 @@
+{% extends 'layout.html' %}
+
+{% block title %}
+  {{ title }}
+{% endblock %}
+
+
+{% block content %}
+  <div class="container">
+    <div class="row">
+      <div class="col">
+        <table class="table">
+          <thead>
+            <tr>
+              <th scope="col">#</th>
+              <th scope="col">Aspirante</th>
+              <th scope="col">Categoría</th>
+            </tr>
+          </thead>
+          <tbody>
+            {% for ctx in ctx %}
+            <tr>
+              <th scope="row">{{ ctx.id }}</th>
+              <td>{{ ctx.aspirante }}</td>
+              <td>{{ ctx.categoria }}</td>
+              <td>
+              <a href="delete/{{ ctx.id }}" class="btn btn-danger">Eliminar</a>
+              </td>
+            </tr>
+            {% endfor %}
+          </tbody>
+        </table>
+      </div>
+    </div>
+  </div>
+  {% for i in ctx %}
+  {% endfor %}
+{% endblock %}
