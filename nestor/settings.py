@@ -77,10 +77,10 @@ WSGI_APPLICATION = 'nestor.wsgi.application'
 DATABASES = {
     'default': {
         'ENGINE': 'django.db.backends.postgresql',
-        'NAME': 'propuestas',
-        'USER': 'postgres',
-        'PASSWORD': 'Z4dk13l2017**',
-        'HOST': '127.0.0.1',
+        'NAME': '',
+        'USER': '',
+        'PASSWORD': '',
+        'HOST': '',
         'CHARSET': 'UTF8',
     }
 }
